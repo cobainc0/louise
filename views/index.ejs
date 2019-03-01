@@ -1,0 +1,23 @@
+<%- include('header') %>
+
+<div class="container">
+    <h1><%= pageData.title %></h1>
+</div>
+<br>
+<br>
+<br>
+<form id="gatewayAccountForm" action="/create-account" method="POST">
+<label for="type">type: <input type="text" name="type" id="type" required placeholder="type" step="0.01"></label>
+<br><label class="field-labels" for="payment_provider">payment_provider: 
+    <input type="text" name="payment_provider" id="payment_provider" required placeholder="payment_provider" step="0.01"></label>
+<br><label class="field-labels" for="service_name">service_name: 
+    <input type="text"  name="service_name" id="service_name" required placeholder="service_name" step="0.01"></label>
+<br><label class="field-labels" for="description">description: 
+    <input type="text"  name="description" id="description" placeholder="description" step="0.01"></label>
+<br><label class="field-labels" for="analytics_id">analytics_id: 
+    <input type="text"  name="analytics_id" id="analytics_id" placeholder="analytics_id" step="0.01"></label>
+<br><label class="field-labels" for="requires_3ds">requires_3ds: 
+    <input type="text" name="requires_3ds" id="requires_3ds" placeholder="requires_3ds" step="0.01"></label>
+<button type="submit">Create Gateway account</button>
+</form>
+<%- include('footer') %>
