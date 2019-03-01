@@ -1,0 +1,10 @@
+# Rubble
+.DS_Store
+.history/
+*.code-workspace
+
+# Node
+node_modules/
+
+# Misc
+scratch.json
